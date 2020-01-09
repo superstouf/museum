@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Arts</h1>
+
+<h1> ARTWORKS MUSEUM</h1>
+<h1> COLORS OF JAPAN </h1>
+<h2> Stephen NICOLAS </h2>
+
 
 <table>
   <thead>
@@ -23,7 +27,7 @@
         <td><%= art.description %></td>
         <td><%= art.date %></td>
         <td><%= art.dimensions %></td>
-        <td><%= art.photo %></td>
+        <td><img src="<%= art.photo %>" width=400px </td>
         <td><%= link_to 'Show', art %></td>
         <td><%= link_to 'Edit', edit_art_path(art) %></td>
         <td><%= link_to 'Destroy', art, method: :delete, data: { confirm: 'Are you sure?' } %></td>
